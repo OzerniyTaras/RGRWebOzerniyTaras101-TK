@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em; /* Великий шрифт */
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .contact-item {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            padding: 20px;
+        }
+        .contact-item h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .contact-info {
+            width: calc(100% - 20px); /* Відступи враховані */
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+            background-color: #f9f9f9;
+            color: #333;
+            user-select: all; /* Дозволяє користувачеві вибирати текст для копіювання */
+        }
+        .contact-item a {
+            display: block;
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .contact-item a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Наші контакти, за якими ви зможете з нами зв'язатися</h1>
+    </header>
+    <main>
+        <div class="contact-item">
+            <h2>Номер телефону нашого агентства:</h2>
+            <div class="contact-info">+380954702036</div>
+        </div>
+        <div class="contact-item">
+            <h2>Наша електронна адреса:</h2>
+            <div class="contact-info">ozerniy.taras@gmail.com</div>
+        </div>
+        <div class="contact-item">
+            <h2>Наші соціальні мережі:</h2>
+            <a href="https://web.telegram.org/a/#885617883" target="_blank">Telegram</a>
+            <a href="https://www.instagram.com/ozerniy_taras/" target="_blank">Instagram</a>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ласкаво просимо</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://admin.idaoffice.org/wp-content/uploads/2017/12/cities-that-love-tourists-1024x550.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .content {
+            background-color: white;
+            margin: 0 5cm;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .language-switcher {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .language-switcher a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007BFF;
+            cursor: pointer;
+        }
+
+        .language-switcher a:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: 2em;
+            line-height: 1.5;
+        }
+
+        h2 {
+            font-size: 2.5em;
+        }
+    </style>
+    <script>
+        function setLanguage(lang) {
+            var title = document.getElementById('title');
+            var content = document.getElementById('content');
+            var about = document.getElementById('about');
+            if (lang === 'uk') {
+                about.innerText = 'Про сайт';
+                title.innerText = 'Ласкаво просимо';
+                content.innerHTML = 'Сайт створено студентом групи 101-ТК Озерним Тарасом.<br>На нашому сайті ви знайдете інформацію про найдивовижніші, та найвидатніші місця по всіх куточках України, для подорожування по ним.<br>Цей сайт не є реальним, але надає уявлення про те, як може виглядати інформаційний портал.';
+            } else if (lang === 'ru') {
+                about.innerText = 'О сайте';
+                title.innerText = 'Добро пожаловать';
+                content.innerHTML = 'Сайт создан студентом группы 101-ТК Озёрным Тарасом.<br>На нашем сайте вы найдете информацию о самых удивительных и выдающихся местах по всем уголкам Украины, для путешествия по ним.<br>Этот сайт не является реальным, но предоставляет представление о том, как может выглядеть информационный портал.';
+            } else if (lang === 'en') {
+                about.innerText = 'About the site';
+                title.innerText = 'Welcome';
+                content.innerHTML = 'The site was created by Taras Ozernyi, a student of group 101-TK.<br>On our site you will find information about the most amazing and outstanding places in all corners of Ukraine, for traveling around them.<br>This site is not real, but gives an idea of what an information portal might look like.';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="language-switcher">
+        <a onclick="setLanguage('en')">English</a> | <a onclick="setLanguage('ru')">Русский</a> | <a onclick="setLanguage('uk')">Українська</a>
+    </div>
+
+    <div class="content">
+        <h2 id="about">Про сайт</h2>
+        <h1 id="title">Ласкаво просимо</h1>
+        <p id="content">Сайт створено студентом групи 101-ТК Озерним Тарасом.<br>На нашому сайті ви знайдете інформацію про найдивовижніші, та найвидатніші місця по всіх куточках України, для подорожування по ним.<br>Цей сайт не є реальним, але надає уявлення про те, як може виглядати інформаційний портал.</p>
+    </div>
+</body>
+</html>

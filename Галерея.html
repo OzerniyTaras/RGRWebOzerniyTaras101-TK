@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея Картинок</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em; /* Великий шрифт */
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery-item {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            overflow: hidden;
+            width: 600px; /* Збільшено ширину вдвічі */
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 400px; /* Збільшено висоту вдвічі */
+            object-fit: cover;
+        }
+        .gallery-item h2 {
+            font-size: 1.2em;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Наші туристичні місця</h1>
+    </header>
+    <main>
+        <div class="gallery-item">
+            <img src="https://santvalentin.com.ua/sites/default/files/tour-gallery/park-Sofiyivka-Uman-Ukraine.jpg" alt="Національний дендрологічний парк «Софіївка»">
+            <h2>Національний дендрологічний парк «Софіївка»</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://pivdenukraine.com.ua/wp-content/uploads/2019/04/56182360_1119826821527051_2977594409912107008_o.jpg" alt="БІОСФЕРНИЙ ЗАПОВІДНИК «АСКАНІЯ-НОВА»">
+            <h2>БІОСФЕРНИЙ ЗАПОВІДНИК «АСКАНІЯ-НОВА»</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://travels.in.ua/api/Photo/PhotoStreamCPOI/41899" alt="Гора Півіха">
+            <h2>Гора Півіха</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://c.files.bbci.co.uk/151F2/production/_119241568_mediaitem119241567.jpg" alt="Соляна шахта в Соледарі">
+            <h2>Соляна шахта в Соледарі</h2>
+        </div>
+    </main>
+</body>
+</html>
